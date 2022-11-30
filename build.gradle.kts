@@ -18,6 +18,15 @@ repositories {
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
+    implementation("one.util:streamex:0.8.1")
+    val lombok = module("org.projectlombok", "lombok", "1.18.24")
+
+    compileOnly(lombok)
+    annotationProcessor(lombok)
+
+    testCompileOnly(lombok)
+    testAnnotationProcessor(lombok)
+    implementation("org.apache.commons:commons-collections4:4.4")
 }
 
 tasks.getByName<Test>("test") {

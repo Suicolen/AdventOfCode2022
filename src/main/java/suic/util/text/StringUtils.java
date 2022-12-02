@@ -14,6 +14,10 @@ public class StringUtils {
         return s.split(",");
     }
 
+    public String[] splitAtSpace(String s) {
+        return s.split(" ");
+    }
+
     public Stream<Character> toCharStream(String str) {
         return str.chars().mapToObj(c -> (char) c);
     }

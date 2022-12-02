@@ -5,33 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87228202-c5df-48c7-ae68-c94a41d1beee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/AdventOfCode2022.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/AdventCalendar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/Puzzle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/util/grid/model/Grid2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/util/grid/model/cell/GridCell2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/util/io/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/util/math/Point2i.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/util/math/Point3i.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/util/math/Range.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/util/regex/MatchWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/util/regex/RegexUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/util/text/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Day01Input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Day02Input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/AdventOfCode2022.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/AdventOfCode2022.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suic/util/grid/GridUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/util/grid/GridUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suic/AdventCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/AdventCalendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suic/util/text/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/util/text/StringUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,23 +64,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Suic/Desktop/desk/adventofcode/AdventOfCode2022",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Suic/Desktop/desk/adventofcode/AdventOfCode2022&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Suic\Desktop\desk\adventofcode\AdventOfCode2022\src\main\resources" />
@@ -148,7 +129,8 @@
       <option name="presentableId" value="Default" />
       <updated>1669769200066</updated>
       <workItem from="1669769201237" duration="2671000" />
-      <workItem from="1669861065471" duration="8923000" />
+      <workItem from="1669861065471" duration="10374000" />
+      <workItem from="1669955725739" duration="6038000" />
     </task>
     <servers />
   </component>

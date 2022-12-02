@@ -60,7 +60,6 @@ public class Day02 implements Puzzle<Integer> {
     private char computePart2Choice(Choice choice) {
         char opponent = choice.opponent();
         char player = choice.player();
-        // lose
         return switch (player) {
             case 'X' -> opponent == 'A' ? 'Z' : opponent == 'B' ? 'X' : 'Y';
             case 'Y' -> opponent == 'A' ? 'X' : opponent == 'B' ? 'Y' : 'Z';

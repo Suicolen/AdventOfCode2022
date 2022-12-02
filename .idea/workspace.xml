@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87228202-c5df-48c7-ae68-c94a41d1beee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Day02Input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/AdventOfCode2022.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/AdventOfCode2022.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suic/AdventCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/AdventCalendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suic/util/text/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/util/text/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suic/days/Day02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +123,7 @@
       <updated>1669769200066</updated>
       <workItem from="1669769201237" duration="2671000" />
       <workItem from="1669861065471" duration="10374000" />
-      <workItem from="1669955725739" duration="6038000" />
+      <workItem from="1669955725739" duration="6709000" />
     </task>
     <servers />
   </component>

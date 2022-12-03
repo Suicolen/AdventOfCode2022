@@ -27,6 +27,8 @@ dependencies {
     testCompileOnly(lombok)
     testAnnotationProcessor(lombok)
     implementation("org.apache.commons:commons-collections4:4.4")
+    implementation("org.apache.commons:commons-lang3:3.12.0")
+
 }
 
 tasks.getByName<Test>("test") {

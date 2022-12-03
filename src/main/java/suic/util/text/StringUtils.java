@@ -6,6 +6,7 @@ import one.util.streamex.StreamEx;
 
 import java.util.BitSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Stream;
 
 @UtilityClass
@@ -32,5 +33,9 @@ public class StringUtils {
 
     public List<Character> toCharList(String str) {
         return IntStreamEx.ofChars(str).mapToObj(c -> (char) c).toList();
+    }
+
+    public Set<Character> toCharSet(String str) {
+        return IntStreamEx.ofChars(str).mapToObj(c -> (char) c).toSet();
     }
 }

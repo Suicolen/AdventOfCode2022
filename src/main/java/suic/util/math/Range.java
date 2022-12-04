@@ -7,13 +7,21 @@ import java.util.List;
 public record Range(int start, int end, int step) {
 
     public Range {
-        if (start >= end) {
-            throw new IllegalArgumentException("start must be greater than end");
+        if (end < start) {
+            throw new IllegalArgumentException("end must be greater or equal to start");
         }
 
         if (step == 0) {
             throw new IllegalArgumentException("step must be non-zero");
         }
+    }
+
+    public boolean containsFully(Range other) {
+        return start <= other.start && end >= other.end;
+    }
+
+    public boolean overlaps(Range other) {
+        return (start <= other.end) && (end >= other.start);
     }
 
     public Range(int start, int end) {

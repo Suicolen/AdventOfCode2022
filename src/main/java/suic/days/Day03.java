@@ -14,8 +14,8 @@ public class Day03 implements Puzzle<Integer> {
     private List<String> rucksacks = new ArrayList<>();
 
     @Override
-    public void parse() {
-        rucksacks = FileUtils.read(getClass().getSimpleName() + "Input.txt");
+    public void parse(boolean test) {
+        rucksacks = FileUtils.read(getClass().getSimpleName() + (test ? "TestInput.txt" : "Input.txt"));
     }
 
     @Override

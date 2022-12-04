@@ -1,5 +1,7 @@
 package suic;
 
+import suic.util.io.InputDownloader;
+
 public class AdventCalendar {
 
     private static final String BASE_PACKAGE = AdventCalendar.class.getPackageName() + ".";
@@ -16,10 +18,18 @@ public class AdventCalendar {
 
     private static void run(int dayOfMonth) {
         try {
+            InputDownloader inputDownloader = new InputDownloader();
+            inputDownloader.download(dayOfMonth);
             Class<?> clazz = Class.forName(BASE_PACKAGE + pad(dayOfMonth));
             System.out.println("Day " + dayOfMonth + " Solution");
             Puzzle<?> puzzle = (Puzzle<?>) clazz.getDeclaredConstructor().newInstance();
-            puzzle.init();
+            puzzle.init(true);
+            System.out.println("With test input: ");
+            System.out.println("Part 1 result = " + puzzle.solvePart1());
+            System.out.println("Part 2 result = " + puzzle.solvePart2());
+            System.out.println("-----------------------------------------------------------");
+            puzzle.init(false);
+            System.out.println("With real input: ");
             System.out.println("Part 1 result = " + puzzle.solvePart1());
             System.out.println("Part 2 result = " + puzzle.solvePart2());
             System.out.println("-----------------------------------------------------------");

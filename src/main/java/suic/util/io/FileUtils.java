@@ -69,9 +69,8 @@ public final class FileUtils {
         return Arrays.stream(readString(path).split(separator)).map(Long::parseLong).toList();
     }
 
-    @SneakyThrows(URISyntaxException.class)
     private static Path getPath(String path) {
-        return Path.of(Objects.requireNonNull(FileUtils.class.getResource("/" + path)).toURI());
+        return Path.of("./inputs/").resolve(path);
     }
 
 }

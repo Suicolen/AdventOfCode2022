@@ -1,13 +1,13 @@
 package suic;
 
 public interface Puzzle<O> {
-    void parse();
+    void parse(boolean testInput);
 
     O solvePart1();
 
     O solvePart2();
 
-    default void init() {
-        parse();
+    default void init(boolean testInput) {
+        parse(testInput);
     }
 }

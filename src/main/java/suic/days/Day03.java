@@ -37,7 +37,7 @@ public class Day03 implements Puzzle<Integer> {
     }
 
     private int getPriority(char c) {
-        return Character.isLowerCase(c) ? (c - 96) : (c - 38);
+        return 1 + (Character.isUpperCase(c) ? c - 'A' + 26 : c - 'a');
     }
 
     private char findCommon(List<String> group) {

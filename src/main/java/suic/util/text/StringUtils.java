@@ -4,9 +4,11 @@ import lombok.experimental.UtilityClass;
 import one.util.streamex.IntStreamEx;
 import one.util.streamex.StreamEx;
 
+import java.util.ArrayList;
 import java.util.BitSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @UtilityClass
@@ -32,7 +34,11 @@ public class StringUtils {
     }
 
     public List<Character> toCharList(String str) {
-        return IntStreamEx.ofChars(str).mapToObj(c -> (char) c).toList();
+        List<Character> characters = new ArrayList<>();
+        for (char c : str.toCharArray()) {
+            characters.add(c);
+        }
+        return characters;
     }
 
     public Set<Character> toCharSet(String str) {

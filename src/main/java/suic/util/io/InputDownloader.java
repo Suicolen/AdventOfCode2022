@@ -55,7 +55,7 @@ public class InputDownloader {
         Document doc = Jsoup.connect("https://adventofcode.com/2022/day/%d".formatted(day)).get();
         Element exampleTextElement = doc.getElementsByTag("p")
                 .stream()
-                .filter(e -> e.text().startsWith("For example, "))
+                .filter(e -> e.text().startsWith("For example"))
                 .findFirst()
                 .orElseThrow();
         String example = Objects.requireNonNull(exampleTextElement.nextElementSibling()).text();

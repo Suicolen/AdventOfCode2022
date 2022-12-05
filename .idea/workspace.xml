@@ -5,35 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87228202-c5df-48c7-ae68-c94a41d1beee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/util/io/InputDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/Day05TestInput.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day05.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/Day01Input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/Day02Input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/Day03Input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/Day04Input.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/suic/AdventCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/AdventCalendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suic/Puzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/Puzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suic/days/Day01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suic/days/Day02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/suic/days/Day03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suic/days/Day04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day04.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/suic/util/io/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/util/io/FileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Day01Input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Day02Input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Day03Input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Day04Input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suic/util/io/InputDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/util/io/InputDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suic/util/text/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/util/text/StringUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,8 +180,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AdventOfCode2022 [build]" />
         <item itemvalue="Gradle.AdventOfCode2022 [clean]" />
+        <item itemvalue="Gradle.AdventOfCode2022 [build]" />
         <item itemvalue="Application.AdventCalendar" />
         <item itemvalue="Application.Day01" />
       </list>
@@ -213,7 +201,8 @@
       <workItem from="1670018430155" duration="775000" />
       <workItem from="1670043482749" duration="11820000" />
       <workItem from="1670112548789" duration="8090000" />
-      <workItem from="1670190645826" duration="5639000" />
+      <workItem from="1670190645826" duration="9826000" />
+      <workItem from="1670211077386" duration="11162000" />
     </task>
     <servers />
   </component>

@@ -13,13 +13,13 @@ public class AdventCalendar {
 
     private static void run() {
         System.out.println("-----------------------------------------------------------");
-        run(4);
+        run(5);
     }
 
     private static void run(int dayOfMonth) {
         try {
-            InputDownloader inputDownloader = new InputDownloader();
-            inputDownloader.download(dayOfMonth);
+            //InputDownloader inputDownloader = new InputDownloader();
+            //inputDownloader.download(dayOfMonth);
             Class<?> clazz = Class.forName(BASE_PACKAGE + pad(dayOfMonth));
             System.out.println("Day " + dayOfMonth + " Solution");
             Puzzle<?> puzzle = (Puzzle<?>) clazz.getDeclaredConstructor().newInstance();

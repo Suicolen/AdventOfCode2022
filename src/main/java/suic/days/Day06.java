@@ -27,12 +27,12 @@ public class Day06 implements Puzzle<Integer> {
     }
 
     private int solve(int characters) {
-        for (int i = 0; i < input.length() - characters; i++) {
+        for (int i = 0; i < input.length() - characters + 1; i++) {
             String sub = input.substring(i, i + characters);
             if (sub.chars().distinct().count() == characters) {
                 return i + characters;
             }
         }
-        return -1;
+        return 0;
     }
 }

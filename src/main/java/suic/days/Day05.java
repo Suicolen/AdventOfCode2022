@@ -1,7 +1,5 @@
 package suic.days;
 
-import one.util.streamex.EntryStream;
-import one.util.streamex.IntStreamEx;
 import one.util.streamex.StreamEx;
 import suic.Puzzle;
 import suic.util.io.FileUtils;
@@ -29,7 +27,7 @@ public class Day05 implements Puzzle<String> {
                 .toList();
         for (String row : input) {
             for (int j = 1; j < row.length(); j += 4) {
-                int column = ((j / 4) % 9) + 1;
+                int column = (j / 4) + 1;
                 char value = row.charAt(j);
                 Deque<Character> stack = stacks.computeIfAbsent(column, k -> new ArrayDeque<>());
                 if (value != ' ') {

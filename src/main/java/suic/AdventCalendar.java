@@ -13,7 +13,7 @@ public class AdventCalendar {
 
     private static void run() {
         System.out.println("-----------------------------------------------------------");
-        run(6);
+        run(7);
     }
 
     private static void run(int dayOfMonth) {
@@ -23,13 +23,7 @@ public class AdventCalendar {
             Class<?> clazz = Class.forName(BASE_PACKAGE + pad(dayOfMonth));
             System.out.println("Day " + dayOfMonth + " Solution");
             Puzzle<?> puzzle = (Puzzle<?>) clazz.getDeclaredConstructor().newInstance();
-            puzzle.init(true);
-            System.out.println("With test input: ");
-            System.out.println("Part 1 result = " + puzzle.solvePart1());
-            System.out.println("Part 2 result = " + puzzle.solvePart2());
-            System.out.println("-----------------------------------------------------------");
-            puzzle.init(false);
-            System.out.println("With real input: ");
+            puzzle.init();
             System.out.println("Part 1 result = " + puzzle.solvePart1());
             System.out.println("Part 2 result = " + puzzle.solvePart2());
             System.out.println("-----------------------------------------------------------");

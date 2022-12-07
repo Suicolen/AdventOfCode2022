@@ -12,8 +12,8 @@ public class Day02 implements Puzzle<Integer> {
     private List<Choice> input;
 
     @Override
-    public void parse(boolean test) {
-        input = FileUtils.read(getClass().getSimpleName() + (test ? "TestInput.txt" : "Input.txt"))
+    public void parse() {
+        input = FileUtils.read(getClass().getSimpleName() + "Input.txt")
                 .stream()
                 .map(StringUtils::splitAtSpace)
                 .map(Choice::parse)

@@ -11,8 +11,8 @@ public class Day01 implements Puzzle<Integer> {
     private List<List<String>> input;
 
     @Override
-    public void parse(boolean test) {
-        input = FileUtils.readGroups(getClass().getSimpleName() + (test ? "TestInput.txt" : "Input.txt"));
+    public void parse() {
+        input = FileUtils.readGroups(getClass().getSimpleName() + "Input.txt");
     }
 
     @Override

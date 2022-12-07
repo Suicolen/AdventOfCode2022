@@ -14,16 +14,14 @@ public class Day05 implements Puzzle<String> {
 
     private List<Instruction> instructions;
     private Map<Integer, Deque<Character>> stacks;
-    private boolean testInput;
 
     private final Pattern PATTERN = Pattern.compile("move (\\d+) from (\\d+) to (\\d+)");
 
     @Override
-    public void parse(boolean testInput) {
-        this.testInput = testInput;
+    public void parse() {
         stacks = new HashMap<>();
-        List<String> input = FileUtils.readAsStream(getClass().getSimpleName() + (testInput ? "TestInput.txt" : "Input.txt"))
-                .limit(testInput ? 3 : 8)
+        List<String> input = FileUtils.readAsStream(getClass().getSimpleName() + "Input.txt")
+                .limit(8)
                 .toList();
         for (String row : input) {
             for (int j = 1; j < row.length(); j += 4) {
@@ -37,7 +35,7 @@ public class Day05 implements Puzzle<String> {
         }
 
         instructions = FileUtils.readAsStream(this.getClass()
-                        .getSimpleName() + (testInput ? "TestInput.txt" : "Input.txt"))
+                        .getSimpleName() + "Input.txt")
                 .filter(str -> PATTERN.matcher(str).matches())
                 .map(str -> {
                     MatchWrapper matcher = RegexUtils.parseMatch(PATTERN, str);
@@ -67,7 +65,7 @@ public class Day05 implements Puzzle<String> {
 
     @Override
     public String solvePart2() {
-        parse(testInput);
+        parse();
         for (Instruction instruction : instructions) {
             int quantity = instruction.quantity();
             int fromIndex = instruction.fromIndex();

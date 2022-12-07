@@ -17,9 +17,9 @@ public class Day04 implements Puzzle<Integer> {
     private static final Pattern PATTERN = Pattern.compile("(\\d+)-(\\d+),(\\d+)-(\\d+)");
 
     @Override
-    public void parse(boolean testInput) {
+    public void parse() {
         elfPairs = FileUtils.readAsStream(this.getClass()
-                        .getSimpleName() + (testInput ? "TestInput.txt" : "Input.txt"))
+                        .getSimpleName() + "Input.txt")
                 .map(line -> {
                     MatchWrapper match = RegexUtils.parseMatch(PATTERN, line);
                     Range firstElfRange = new Range(match.groupInt(1), match.groupInt(2));

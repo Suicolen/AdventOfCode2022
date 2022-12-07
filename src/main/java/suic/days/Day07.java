@@ -36,24 +36,16 @@ public class Day07 implements Puzzle<Integer> {
 
     @Override
     public Integer solvePart1() {
-        List<Directory> directories = flatten(root);
+        List<Directory> directories = root.flatten();
         return directories.stream()
                 .mapToInt(Directory::computeSize)
                 .filter(size -> size <= 100_000)
                 .sum();
     }
 
-    private List<Directory> flatten(Directory directory) {
-        return StreamEx.of(directory.children())
-                .map(this::flatten)
-                .flatMap(List::stream)
-                .append(directory)
-                .toList();
-    }
-
     @Override
     public Integer solvePart2() {
-        List<Directory> directories = flatten(root);
+        List<Directory> directories = root.flatten();
         int usedSpace = directories.stream()
                 .map(Directory::files)
                 .flatMap(List::stream)
@@ -77,6 +69,14 @@ public class Day07 implements Puzzle<Integer> {
                     .sum();
             int totalSpace = files.stream().mapToInt(File::size).sum();
             return childTotalSpace + totalSpace;
+        }
+
+        public List<Directory> flatten() {
+            return StreamEx.of(children)
+                    .map(Directory::flatten)
+                    .flatMap(List::stream)
+                    .append(this)
+                    .toList();
         }
 
         public Directory(String name, Directory parent) {

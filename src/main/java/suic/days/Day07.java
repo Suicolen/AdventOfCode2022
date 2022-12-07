@@ -60,7 +60,7 @@ public class Day07 implements Puzzle<Integer> {
                 .orElseThrow();
     }
 
-    // name isn't really necessary as it isn't used but including it nevertheless
+    // name, parent isn't really necessary as it isn't used but including it nevertheless (can be used to create the ls command impl)
     private record Directory(String name, Directory parent, List<Directory> children,
                              List<File> files) {
         public int computeSize() {

@@ -28,7 +28,7 @@ public class Day07 implements Puzzle<Integer> {
                 String[] data = line.split(" ");
                 int size = Integer.parseInt(data[0]);
                 String name = data[1];
-                File file = new File(name, size);
+                File file = new File(name, current, size);
                 current.files().add(file);
             }
         }
@@ -63,10 +63,15 @@ public class Day07 implements Puzzle<Integer> {
     // name, parent isn't really necessary as it isn't used but including it nevertheless (can be used to create the ls command impl)
     private record Directory(String name, Directory parent, List<Directory> children,
                              List<File> files) {
+        public Directory(String name, Directory parent) {
+            this(name, parent, new ArrayList<>(), new ArrayList<>());
+        }
+
         public int computeSize() {
             int childTotalSpace = children.stream()
                     .mapToInt(Directory::computeSize)
                     .sum();
+
             int totalSpace = files.stream().mapToInt(File::size).sum();
             return childTotalSpace + totalSpace;
         }
@@ -79,12 +84,9 @@ public class Day07 implements Puzzle<Integer> {
                     .toList();
         }
 
-        public Directory(String name, Directory parent) {
-            this(name, parent, new ArrayList<>(), new ArrayList<>());
-        }
     }
 
-    private record File(String name, int size) {
+    private record File(String name, Directory parent, int size) {
     }
 
 }

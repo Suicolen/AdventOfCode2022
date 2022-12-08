@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87228202-c5df-48c7-ae68-c94a41d1beee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/inputs/Day08Input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/suic/util/grid/IntGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/Day07Input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inputs/Day07Input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suic/AdventCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/AdventCalendar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/suic/days/Day07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suic/util/grid/GridUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/util/grid/GridUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suic/util/grid/model/Grid2D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suic/util/grid/model/cell/GridCell2D.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +205,10 @@
       <workItem from="1670190645826" duration="9826000" />
       <workItem from="1670211077386" duration="12899000" />
       <workItem from="1670294014129" duration="6728000" />
-      <workItem from="1670388922523" duration="9792000" />
+      <workItem from="1670388922523" duration="10968000" />
+      <workItem from="1670431849103" duration="2964000" />
+      <workItem from="1670439088001" duration="4099000" />
+      <workItem from="1670460499072" duration="6840000" />
     </task>
     <servers />
   </component>

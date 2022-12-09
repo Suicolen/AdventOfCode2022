@@ -1,6 +1,5 @@
 package suic.days;
 
-import one.util.streamex.IntStreamEx;
 import one.util.streamex.StreamEx;
 import suic.Puzzle;
 import suic.util.io.FileUtils;
@@ -31,7 +30,7 @@ public class Day09 implements Puzzle<Integer> {
         for (Move move : moves) {
             for (int step = 0; step < move.steps(); step++) {
                 head = moveHead(head, move.direction());
-                tail = move(head, tail);
+                tail = moveTail(head, tail);
                 visitedTails.add(tail);
             }
         }
@@ -46,9 +45,9 @@ public class Day09 implements Puzzle<Integer> {
         for (Move move : moves) {
             for (int step = 0; step < move.steps(); step++) {
                 head = moveHead(head, move.direction());
-                tails[0] = move(head, tails[0]);
+                tails[0] = moveTail(head, tails[0]);
                 for (int i = 0; i < tails.length - 1; i++) {
-                    tails[i + 1] = move(tails[i], tails[i + 1]);
+                    tails[i + 1] = moveTail(tails[i], tails[i + 1]);
                 }
                 visitedTails.add(tails[tails.length - 1]);
             }
@@ -66,7 +65,7 @@ public class Day09 implements Puzzle<Integer> {
         };
     }
 
-    private Point2i move(Point2i head, Point2i tail) {
+    private Point2i moveTail(Point2i head, Point2i tail) {
         Point2i delta = head.sub(tail);
         int dx = delta.x();
         int dy = delta.y();

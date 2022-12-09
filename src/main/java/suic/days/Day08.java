@@ -1,6 +1,7 @@
 package suic.days;
 
 import one.util.streamex.IntStreamEx;
+import one.util.streamex.StreamEx;
 import suic.Puzzle;
 import suic.util.grid.GridUtils;
 import suic.util.grid.IntGrid;
@@ -8,6 +9,9 @@ import suic.util.io.FileUtils;
 import suic.util.math.Point2i;
 
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Day08 implements Puzzle<Integer> {
 

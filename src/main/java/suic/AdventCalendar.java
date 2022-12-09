@@ -13,7 +13,7 @@ public class AdventCalendar {
 
     private static void run() {
         System.out.println("-----------------------------------------------------------");
-        run(8);
+        run(9);
     }
 
     private static void run(int dayOfMonth) {

@@ -41,9 +41,7 @@ public class Day09 implements Puzzle<Integer> {
     @Override
     public Integer solvePart2() {
         Point2i head = new Point2i(0, 0);
-        Point2i[] tails = IntStreamEx.range(9)
-                .mapToObj(i -> new Point2i(0, 0))
-                .toArray(Point2i[]::new);
+        Point2i[] tails = StreamEx.generate(Point2i::new).limit(9).toArray(Point2i[]::new);
         Set<Point2i> visitedTails = new HashSet<>();
         for (Move move : moves) {
             for (int step = 0; step < move.steps(); step++) {

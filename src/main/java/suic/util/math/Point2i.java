@@ -2,6 +2,10 @@ package suic.util.math;
 
 public record Point2i(int x, int y) {
 
+    public Point2i() {
+        this(0, 0);
+    }
+
     public Point2i add(Point2i other) {
         return new Point2i(x + other.x, y + other.y);
     }

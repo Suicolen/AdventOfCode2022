@@ -71,9 +71,9 @@ public class Day09 implements Puzzle<Integer> {
         int dx = delta.x();
         int dy = delta.y();
         if (Math.abs(dy) == 2) {
-            return tail.add(Integer.compare(dx, 0), Integer.signum(dy));
+            return tail.add(Integer.signum(dx), Integer.signum(dy));
         } else if (Math.abs(dx) == 2) {
-            return tail.add(Integer.signum(dx), Integer.compare(dy, 0));
+            return tail.add(Integer.signum(dx), Integer.signum(dy));
         }
         return tail;
     }

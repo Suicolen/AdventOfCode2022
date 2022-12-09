@@ -10,7 +10,6 @@ import suic.util.text.StringUtils;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 public class Day09 implements Puzzle<Integer> {
 
@@ -87,7 +86,7 @@ public class Day09 implements Puzzle<Integer> {
         }
     }
 
-    enum Direction {
+    private enum Direction {
         LEFT, RIGHT, UP, DOWN;
 
         public static Direction fromChar(char c) {

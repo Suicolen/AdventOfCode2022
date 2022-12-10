@@ -46,4 +46,8 @@ public record Point2i(int x, int y) {
         return this.x * x + this.y * y;
     }
 
+    public Point2i abs() {
+        return new Point2i(Math.abs(x), Math.abs(y));
+    }
+
 }

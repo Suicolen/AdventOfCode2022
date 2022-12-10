@@ -9,6 +9,7 @@ import suic.util.text.StringUtils;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Stream;
 
 public class Day09 implements Puzzle<Integer> {
 
@@ -40,7 +41,7 @@ public class Day09 implements Puzzle<Integer> {
     @Override
     public Integer solvePart2() {
         Point2i head = new Point2i(0, 0);
-        Point2i[] tails = StreamEx.generate(Point2i::new).limit(9).toArray(Point2i[]::new);
+        Point2i[] tails = Stream.generate(Point2i::new).limit(9).toArray(Point2i[]::new);
         Set<Point2i> visitedTails = new HashSet<>();
         for (Move move : moves) {
             for (int step = 0; step < move.steps(); step++) {

@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87228202-c5df-48c7-ae68-c94a41d1beee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/inputs/Day10Input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suic/AdventCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/AdventCalendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suic/days/Day09.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/days/Day09.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/suic/util/math/Point2i.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suic/util/math/Point2i.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +194,8 @@
       <workItem from="1670439088001" duration="4099000" />
       <workItem from="1670460499072" duration="23646000" />
       <workItem from="1670581714665" duration="2265000" />
-      <workItem from="1670648324542" duration="4674000" />
+      <workItem from="1670648324542" duration="8027000" />
+      <workItem from="1670674899049" duration="676000" />
     </task>
     <servers />
   </component>

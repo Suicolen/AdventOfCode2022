@@ -7,23 +7,23 @@ public record Point2i(int x, int y) {
     }
 
     public Point2i add(Point2i other) {
-        return new Point2i(x + other.x, y + other.y);
+        return add(other.x, other.y);
     }
 
     public Point2i sub(Point2i other) {
-        return new Point2i(x - other.x, y - other.y);
+        return sub(other.x, other.y);
     }
 
     public Point2i multiply(Point2i other) {
-        return new Point2i(x * other.x, y * other.y);
+        return multiply(other.x, other.y);
     }
 
     public Point2i divide(Point2i other) {
-        return new Point2i(x / other.x, y / other.y);
+        return divide(other.x, other.y);
     }
 
     public int dot(Point2i other) {
-        return x * other.x + y * other.y;
+        return dot(other.x, other.y);
     }
 
     public Point2i add(int x, int y) {

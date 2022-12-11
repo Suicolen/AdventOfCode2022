@@ -32,7 +32,7 @@ public class Day11 implements Puzzle<Long> {
 
     private long solve(int cycles, int worryDivisor) {
         Map<Integer, Integer> inspections = new HashMap<>();
-        long divisorsProduct = monkeys.stream()
+        long lcm = monkeys.stream()
                 .mapToLong(e -> e.test().divisor())
                 .reduce((a, b) -> a * b)
                 .orElseThrow();
@@ -48,7 +48,7 @@ public class Day11 implements Puzzle<Long> {
                     int newMonkeyIndex = newWorryLevel % test.divisor() == 0 ? test.trueValue() : test.falseValue();
                     itemIterator.remove();
                     Monkey newMonkey = monkeys.get(newMonkeyIndex);
-                    newMonkey.items().add(newWorryLevel % divisorsProduct);
+                    newMonkey.items().add(newWorryLevel % lcm);
                     inspections.merge(j, 1, Integer::sum);
                 }
             }

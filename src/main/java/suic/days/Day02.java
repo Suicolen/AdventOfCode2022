@@ -67,10 +67,10 @@ public class Day02 implements Puzzle<Integer> {
             default -> opponent == 'A' ? 'Y' : opponent == 'B' ? 'Z' : 'X';
         };
     }
-}
 
-record Choice(char opponent, char player) {
-    public static Choice parse(String[] choices) {
-        return new Choice(choices[0].charAt(0), choices[1].charAt(0));
+    private record Choice(char opponent, char player) {
+        public static Choice parse(String[] choices) {
+            return new Choice(choices[0].charAt(0), choices[1].charAt(0));
+        }
     }
 }

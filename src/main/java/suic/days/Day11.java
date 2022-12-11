@@ -15,10 +15,7 @@ public class Day11 implements Puzzle<Long> {
     public void parse() {
         monkeys = FileUtils.readGroups(getClass().getSimpleName() + "Input.txt")
                 .stream()
-                .map(group -> {
-                    String[] data = group.toArray(String[]::new);
-                    return Monkey.parse(data);
-                })
+                .map(Monkey::parse)
                 .toList();
     }
 
@@ -56,7 +53,6 @@ public class Day11 implements Puzzle<Long> {
                 }
             }
         }
-
         return EntryStream.of(inspections)
                 .reverseSorted(Map.Entry.comparingByValue())
                 .mapToLong(Map.Entry::getValue)
@@ -81,12 +77,12 @@ public class Day11 implements Puzzle<Long> {
     private record Monkey(List<Long> items, Operation operation, Test test) {
 
         // ugly :(
-        public static Monkey parse(String[] data) {
+        public static Monkey parse(List<String> data) {
             List<Long> startingItems = null;
             Operation operation = null;
             Test test = null;
-            for (int i = 0; i < data.length - 2; i++) {
-                String line = data[i];
+            for (int i = 0; i < data.size() - 2; i++) {
+                String line = data.get(i);
                 if (line.contains("Starting items:")) {
                     startingItems = Arrays.stream(line.split(":")[1].trim().split(", "))
                             .map(Long::parseLong)
@@ -98,8 +94,8 @@ public class Day11 implements Puzzle<Long> {
                     operation = new Operation(split[1].charAt(0), old ? 0 : Integer.parseInt(split[2]), old);
                 } else if (line.contains("Test:")) {
                     int testValue = Integer.parseInt(line.substring(line.indexOf("by") + 3));
-                    String ifTrue = data[i + 1];
-                    String ifFalse = data[i + 2];
+                    String ifTrue = data.get(i + 1);
+                    String ifFalse = data.get(i + 2);
                     int trueValue = Integer.parseInt(ifTrue.substring(ifTrue.indexOf("monkey") + "monkey".length() + 1));
                     int falseValue = Integer.parseInt(ifFalse.substring(ifFalse.indexOf("monkey") + "monkey".length() + 1));
                     test = new Test(testValue, trueValue, falseValue);

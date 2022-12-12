@@ -1,6 +1,7 @@
 package suic.days;
 
 import one.util.streamex.EntryStream;
+import one.util.streamex.IntStreamEx;
 import suic.Puzzle;
 import suic.util.io.FileUtils;
 
